@@ -1,6 +1,6 @@
 {
   "name": "lcd-sprite-drawer-editor",
-  "version": "3.5.1",
+  "version": "3.5.2",
   "private": true,
   "description": "LCD Sprite Drawer settings editor",
   "author": "SunokoHub",
@@ -34,7 +34,8 @@
     "files": [
       "dist/**/*",
       "electron/**/*",
-      "package.json"
+      "package.json",
+      "LICENSE"
     ],
     "win": {
       "target": [
