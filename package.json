@@ -1,0 +1,52 @@
+{
+  "name": "lcd-sprite-drawer-editor",
+  "version": "3.5.1",
+  "private": true,
+  "description": "LCD Sprite Drawer settings editor",
+  "author": "SunokoHub",
+  "main": "electron/main.cjs",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build",
+    "start": "npm run build && electron .",
+    "test": "node --import tsx --test --test-isolation=none tests/model.test.ts tests/resize.test.ts tests/editing.test.ts tests/settings.test.ts tests/dynamics.test.ts tests/custom-data.test.ts",
+    "dist:win": "npm run build && node scripts/dist-win.cjs",
+    "test:ui": "playwright test",
+    "test:desktop": "npm run build && playwright test --config playwright.desktop.config.ts",
+    "format": "prettier --write src electron tests *.ts *.json index.html .github/workflows/windows.yml"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^24.0.0",
+    "electron": "44.9.0",
+    "electron-builder": "26.15.3",
+    "prettier": "^3.9.10",
+    "tsx": "^4.20.0",
+    "typescript": "7.0.2",
+    "vite": "8.3.4"
+  },
+  "build": {
+    "appId": "io.sunokohub.lcdspriteeditor",
+    "productName": "LCD Sprite Drawer Editor",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    }
+  },
+  "type": "module",
+  "license": "MIT"
+}

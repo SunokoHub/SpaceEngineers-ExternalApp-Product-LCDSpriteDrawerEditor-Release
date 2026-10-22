@@ -1,0 +1,2 @@
+Element=background;Property=Width;Rate=40;Mode=PingPong;Initial=200;Min=100;Max=300;Anchor=CenterLeft
+Element=label;Property=MoveY;Rate=10;Mode=PingPong;Min=-30;Max=30

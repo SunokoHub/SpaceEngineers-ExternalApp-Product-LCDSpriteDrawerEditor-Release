@@ -1,0 +1,2 @@
+Id=background;Type=TEXTURE;Data="SquareSimple";Position=0,0;Size=200,100;Color=20,40,60,255
+Id=label;Type=TEXT;Data="READY";Position=0,0;TextScale=1;Color=255,255,255,255

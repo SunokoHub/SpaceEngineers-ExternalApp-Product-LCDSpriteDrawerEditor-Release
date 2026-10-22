@@ -1,0 +1,2 @@
+Element=background;Property=Color;Source=Enabled;BlockName="Light";MinColor=255,80,80,255;MaxColor=80,255,160,255
+Element=label;Property=Data;Source=Speed;BlockName="Cockpit";Decimals=1;Prefix="Speed: ";Suffix=" m/s"
