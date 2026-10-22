@@ -4,6 +4,8 @@ Space Engineers の LCD Sprite Drawer 向け設定編集アプリ。Windows x64 
 
 ## ダウンロードと起動
 
+[Windows版 3.5.3 をダウンロード（ZIP）](https://github.com/SunokoHub/SpaceEngineers-ExternalApp-Product-LCDSpriteDrawerEditor-Release/releases/download/v3.5.3/LCD.Sprite.Drawer.Editor-3.5.3-win.zip) — Windows x64・約111 MB・プレリリース。
+
 [Releases](https://github.com/SunokoHub/SpaceEngineers-ExternalApp-Product-LCDSpriteDrawerEditor-Release/releases) の公開済み ZIP を使用。ZIP 全体を展開し、版別フォルダーの `LCD Sprite Drawer Editor.exe` を起動。Node.js の導入は不要。リリースがない場合はソースからビルド。
 
 ## 操作
