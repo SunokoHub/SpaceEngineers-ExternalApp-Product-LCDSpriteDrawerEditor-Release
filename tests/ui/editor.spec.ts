@@ -2037,7 +2037,7 @@ test("one variable form shows only applicable fields with type, units and descri
   await expect(page.locator("#source-help")).toContainText("MWh");
   await expect(form.locator("[name=decimals]")).toBeVisible();
   await expect(form.locator("[name=inputMin]")).toBeHidden();
-  await expect(page.locator("#property-help")).toContainText("数値換算なし");
+  await expect(page.locator("#property-help")).toContainText("単位の自動換算なし");
   await source.selectOption("Motion");
   await expect(form.locator("[name=property] option[value=Width]")).toHaveCount(
     0,
@@ -2899,7 +2899,7 @@ test("game import replaces old screens, preserves canceled input and accepts the
   const info = readFileSync(
     "tests/fixtures/surface-info.ini",
     "utf8",
-  );
+  ).replace(/\r\n/g, "\n");
   const source = readFileSync(
     "tests/fixtures/static-custom-data.ini",
     "utf8",
